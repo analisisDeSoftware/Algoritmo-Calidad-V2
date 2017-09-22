@@ -1,4 +1,4 @@
-package algoritmodecalidad;
+Ôªøpackage algoritmodecalidad;
 
 import java.awt.EventQueue;
 
@@ -923,25 +923,25 @@ public class Aplicacion extends JFrame {
 		Criterio seguridadDeAcceso = new Criterio(
 				"Seguridad de Acceso",
 				"Capacidad del producto software para asegurar la integridad de los datos y la confidencialidad de estos.",
-				"EncriptaciÛn de la contraseÒa y datos sensibles." + System.lineSeparator() + "Inicio de sesiÛn.",
-				"Ninguna caracterÌstica cumplida.",
-				"Una caracterÌstica cumplida.",
-				"Dos caracterÌsticas cumplidas.",
+				"Encriptaci√≥n de la contrase√±a y datos sensibles." + System.lineSeparator() + "Inicio de sesi√≥n.",
+				"Ninguna caracter√≠stica cumplida.",
+				"Una caracter√≠stica cumplida.",
+				"Dos caracter√≠sticas cumplidas.",
 				true);
 		criterios.add(seguridadDeAcceso);
 		
 		Criterio exactitud = new Criterio(
 				"Exactitud",
-				"Es la capacidad del producto software para proporcionar los resultados con el grado necesario de precisiÛn.",
+				"Es la capacidad del producto software para proporcionar los resultados con el grado necesario de precisi√≥n.",
 				"",
-				"No se realiza ning˙n informe.",
+				"No se realiza ning√∫n informe.",
 				"Se realiza 1 informe.",
-				"Se realizan 2 o m·s informes.",
+				"Se realizan 2 o m√°s informes.",
 				false);
 		criterios.add(exactitud);
 		
 		Criterio adecuacion = new Criterio(
-				"AdecuaciÛn",
+				"Adecuaci√≥n",
 				"Capacidad del producto software para proporcionar un conjunto apropiado de funciones para tareas y objetivos de usuario especificados.",
 				"",
 				"El software no cumple con ninguna funcionalidad requerida por el usuario.",
@@ -953,8 +953,8 @@ public class Aplicacion extends JFrame {
 		// 2. Eficiencia
 		
 		Criterio utilizacionDeLosRecursos = new Criterio(
-				"UtilizaciÛn de los Recursos",
-				"Se evaluar· la eficiencia del producto software de acuerdo al porcentaje de uso de procesador y de memoria que realice.",
+				"Utilizaci√≥n de los Recursos",
+				"Se evaluar√° la eficiencia del producto software de acuerdo al porcentaje de uso de procesador y de memoria que realice.",
 				"",
 				"El producto consume 51% a 100% de uso de procesador y de uso de memoria.",
 				"El producto consume 26% a 50% de uso de procesador y de memoria.",
@@ -964,9 +964,9 @@ public class Aplicacion extends JFrame {
 		
 		Criterio comportamientoTemporal = new Criterio(
 				"Comportamiento Temporal",
-				"Se evaluar· el tiempo que est· el producto software sin informarle al usuario del estado en que se encuentra la solicitud que realizÛ.",
+				"Se evaluar√° el tiempo que est√° el producto software sin informarle al usuario del estado en que se encuentra la solicitud que realiz√≥.",
 				"",
-				"El software demora m·s de 6 segundos en informar el estado de la solicitud.",
+				"El software demora m√°s de 6 segundos en informar el estado de la solicitud.",
 				"El software demora entre 2 a 5 segundos en informar el estado de la solicitud.",
 				"El software demora menos de 2 segundos en informar el estado de la solicitud.",
 				false);
@@ -978,19 +978,19 @@ public class Aplicacion extends JFrame {
 				"Tolerancia a Fallos",
 				"Es la capacidad del producto software de mantener la integridad de los datos cuando se producen fallas del sistema.",
 				"Cuando sucede un error se protegen los datos procesados." + System.lineSeparator() + "Se realiza un log de actividades que el sistema estaba haciendo.",
-				"No se cumple con ninguna caracterÌstica.",
-				"Se cumple con 1 caracterÌstica.",
-				"Se cumple con las 2 caracterÌsticas.",
+				"No se cumple con ninguna caracter√≠stica.",
+				"Se cumple con 1 caracter√≠stica.",
+				"Se cumple con las 2 caracter√≠sticas.",
 				true);
 		criterios.add(toleranciaAFallos);
 		
 		Criterio capacidadDeRecuperacionDeErrores = new Criterio(
-				"Capacidad de RecuperaciÛn de Errores",
-				"Es la capacidad del sistema de reanudar sus actividades cuando se producen errores crÌticos.",
-				"El sistema reanuda las actividades si se produce una falla crÌtica." + System.lineSeparator() + "Reanuda sus actividades y vuelve al estado en que estaba.",
-				"No se cumple con ninguna caracterÌstica.",
-				"Se cumple con 1 caracterÌstica.",
-				"Se cumple con las 2 caracterÌsticas.",
+				"Capacidad de Recuperaci√≥n de Errores",
+				"Es la capacidad del sistema de reanudar sus actividades cuando se producen errores cr√≠ticos.",
+				"El sistema reanuda las actividades si se produce una falla cr√≠tica." + System.lineSeparator() + "Reanuda sus actividades y vuelve al estado en que estaba.",
+				"No se cumple con ninguna caracter√≠stica.",
+				"Se cumple con 1 caracter√≠stica.",
+				"Se cumple con las 2 caracter√≠sticas.",
 				false);
 		criterios.add(capacidadDeRecuperacionDeErrores);
 		
@@ -998,7 +998,7 @@ public class Aplicacion extends JFrame {
 		
 		Criterio capacidadDeSerAnalizado = new Criterio(
 				"Capacidad de ser Analizado",
-				"Para evaluar la capacidad que tiene el cÛdigo para ser analizado se tiene en cuenta el promedio de comentarios de todos los mÈtodos del programa.",
+				"Para evaluar la capacidad que tiene el c√≥digo para ser analizado se tiene en cuenta el promedio de comentarios de todos los m√©todos del programa.",
 				"",
 				"El programa posee un promedio de comentarios menor al 20%.",
 				"El programa posee un promedio de comentarios entre el 20% y 49%. ",
@@ -1008,20 +1008,20 @@ public class Aplicacion extends JFrame {
 		
 		Criterio capacidadParaSerModificado = new Criterio(
 				"Capacidad para ser Modificado",
-				"Para evaluar la capacidad que tiene el cÛdigo para ser cambiado se tomar· en cuenta la complejidad ciclom·tica del mÈtodo.",
+				"Para evaluar la capacidad que tiene el c√≥digo para ser cambiado se tomar√° en cuenta la complejidad ciclom√°tica del m√©todo.",
 				"",
-				"La complejidad ciclom·tica es mayor a 20.",
-				"La complejidad ciclom·tica es entre 11 y 20.",
-				"La complejidad ciclom·tica es menor o igual a 10.",
+				"La complejidad ciclom√°tica es mayor a 20.",
+				"La complejidad ciclom√°tica es entre 11 y 20.",
+				"La complejidad ciclom√°tica es menor o igual a 10.",
 				false);
 		criterios.add(capacidadParaSerModificado);
 		
 		Criterio estabilidad = new Criterio(
 				"Estabilidad",
-				"Para determinar la estabilidad del software se eval˙a el promedio de fallas que presenta el producto por prueba.",
+				"Para determinar la estabilidad del software se eval√∫a el promedio de fallas que presenta el producto por prueba.",
 				"",
-				"El software presenta un promedio de 4 o m·s fallas por prueba.",
-				"El software presenta un promedio de 3 o m·s fallas por prueba.",
+				"El software presenta un promedio de 4 o m√°s fallas por prueba.",
+				"El software presenta un promedio de 3 o m√°s fallas por prueba.",
 				"El software presenta un promedio de 2 o menos fallas por prueba.",
 				true);
 		criterios.add(estabilidad);
@@ -1030,11 +1030,11 @@ public class Aplicacion extends JFrame {
 		
 		Criterio capacidadDeSerEntendido = new Criterio(
 				"Capacidad de ser Entendido",
-				"Capacidad que posee el software, para ayudar a los usuarios ante una determinada situaciÛn donde se necesite asistencia.",
-				"Ayuda contextual sobre men˙s y botones de acciÛn (tooltip)." + System.lineSeparator() + "Manual de ayuda al usuario incorporado en el sistema.",
-				"No se cumple con ninguna caracterÌstica.",
-				"Se cumple con 1 caracterÌstica.",
-				"Se cumple con las 2 caracterÌsticas.",
+				"Capacidad que posee el software, para ayudar a los usuarios ante una determinada situaci√≥n donde se necesite asistencia.",
+				"Ayuda contextual sobre men√∫s y botones de acci√≥n (tooltip)." + System.lineSeparator() + "Manual de ayuda al usuario incorporado en el sistema.",
+				"No se cumple con ninguna caracter√≠stica.",
+				"Se cumple con 1 caracter√≠stica.",
+				"Se cumple con las 2 caracter√≠sticas.",
 				false);
 		criterios.add(capacidadDeSerEntendido);
 		
@@ -1050,11 +1050,11 @@ public class Aplicacion extends JFrame {
 		
 		Criterio capacidadDeSerAtractivo = new Criterio(
 				"Capacidad de ser Atractivo",
-				"Es la agrupaciÛn correcta de funcionalidades dentro del programa en la interfaz gr·fica para poder realizar una funciÛn especÌfica.",
+				"Es la agrupaci√≥n correcta de funcionalidades dentro del programa en la interfaz gr√°fica para poder realizar una funci√≥n espec√≠fica.",
 				"",
-				"El usuario utiliza m·s de 5 pasos promedio para poder realizar una funciÛn especÌfica.",
-				"El usuario necesita entre 4 y 5 pasos promedio para poder realizar una funciÛn especÌfica.",
-				"El usuario solamente necesita de 3 o menos pasos promedio para poder realizar una funciÛn especÌfica.",
+				"El usuario utiliza m√°s de 5 pasos promedio para poder realizar una funci√≥n espec√≠fica.",
+				"El usuario necesita entre 4 y 5 pasos promedio para poder realizar una funci√≥n espec√≠fica.",
+				"El usuario solamente necesita de 3 o menos pasos promedio para poder realizar una funci√≥n espec√≠fica.",
 				true);
 		criterios.add(capacidadDeSerAtractivo);
 				
@@ -1066,15 +1066,15 @@ public class Aplicacion extends JFrame {
 				"",
 				"El software solo es compatible con 1 sistema operativo en concreto.",
 				"El software es compatible con 2 sistemas operativos.",
-				"El software es compatible con 3 o m·s sistemas operativos.",
+				"El software es compatible con 3 o m√°s sistemas operativos.",
 				false);
 		criterios.add(adaptabilidad);
 		
 		Criterio instalabilidad = new Criterio(
 				"Instalabilidad",
-				"El producto software debe poder ser instalado en una cantidad mÌnima de pasos.",
+				"El producto software debe poder ser instalado en una cantidad m√≠nima de pasos.",
 				"",
-				"El producto se instala en 7 o m·s pasos.",
+				"El producto se instala en 7 o m√°s pasos.",
 				"El producto se instala entre 5 y 6 pasos.",
 				"El producto se instala en 4 pasos o menos.",
 				true);
