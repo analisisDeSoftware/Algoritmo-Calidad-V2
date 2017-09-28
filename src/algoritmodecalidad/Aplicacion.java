@@ -11,6 +11,7 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.SystemColor;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import javax.swing.LayoutStyle.ComponentPlacement;
@@ -120,15 +121,25 @@ public class Aplicacion extends JFrame {
 		lblResultadoFinal.setForeground(new Color(128, 0, 0));
 		
 		JProgressBar progressBar = new JProgressBar();
+		
 		progressBar.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
+				int aux=0;
 				if(progressBar.getValue() >= 30) {
-					lblResultadoFinal.setText("SATISFACTORIO");
-					lblResultadoFinal.setForeground(new Color(0, 128, 0));
-				}else {
+					for(int i=0;i<15;i++){
+						if(criterios.get(i).GetNivelPonderado()==4)
+							aux++;
+					}
+					if(aux==6){
+						lblResultadoFinal.setText("SATISFACTORIO");
+						lblResultadoFinal.setForeground(new Color(0, 128, 0));
+						return;
+					}
+					
+				}
 					lblResultadoFinal.setText("NO SATISFACTORIO");
 					lblResultadoFinal.setForeground(new Color(128, 0, 0));
-				}
+				
 			}
 		});
 		progressBar.setMaximum(42);
@@ -1079,7 +1090,6 @@ public class Aplicacion extends JFrame {
 				"El producto se instala en 4 pasos o menos.",
 				true);
 		criterios.add(instalabilidad);
-		
 		
 	}
 	
