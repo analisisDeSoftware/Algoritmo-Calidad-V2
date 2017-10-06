@@ -1,31 +1,29 @@
 ﻿package algoritmodecalidad;
 
+import java.awt.Color;
+import java.awt.Cursor;
 import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
-import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.SystemColor;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
-import javax.swing.LayoutStyle.ComponentPlacement;
-import javax.swing.JTextPane;
-import java.awt.Color;
-import javax.swing.border.TitledBorder;
-import javax.swing.UIManager;
-import java.awt.Cursor;
-import javax.swing.JSlider;
-import javax.swing.JProgressBar;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import javax.swing.event.ChangeListener;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JProgressBar;
+import javax.swing.JSlider;
+import javax.swing.JTextPane;
+import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.UIManager;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.TitledBorder;
 import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 public class Aplicacion extends JFrame {
 
@@ -77,7 +75,7 @@ public class Aplicacion extends JFrame {
 		generarCriterios();
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 630, 713);
+		setBounds(100, 100, 671, 809);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -292,28 +290,29 @@ public class Aplicacion extends JFrame {
 						.addGroup(gl_panel_1.createSequentialGroup()
 							.addComponent(sliderNivelActual, GroupLayout.DEFAULT_SIZE, 269, Short.MAX_VALUE)
 							.addContainerGap())
-						.addGroup(gl_panel_1.createParallelGroup(Alignment.TRAILING)
-							.addGroup(gl_panel_1.createSequentialGroup()
-								.addComponent(lblCaractersticasAMedir, GroupLayout.PREFERRED_SIZE, 165, GroupLayout.PREFERRED_SIZE)
-								.addGap(114))
-							.addGroup(Alignment.LEADING, gl_panel_1.createSequentialGroup()
-								.addComponent(txtpnDescripcion, GroupLayout.PREFERRED_SIZE, 269, GroupLayout.PREFERRED_SIZE)
-								.addContainerGap())
-							.addGroup(Alignment.LEADING, gl_panel_1.createSequentialGroup()
-								.addComponent(txtpnAceptable, GroupLayout.PREFERRED_SIZE, 269, GroupLayout.PREFERRED_SIZE)
-								.addContainerGap())
-							.addGroup(Alignment.LEADING, gl_panel_1.createSequentialGroup()
-								.addComponent(txtpnMedianamenteAceptable, GroupLayout.PREFERRED_SIZE, 269, GroupLayout.PREFERRED_SIZE)
-								.addContainerGap())
-							.addGroup(Alignment.LEADING, gl_panel_1.createSequentialGroup()
-								.addComponent(txtpnNoAceptable, GroupLayout.PREFERRED_SIZE, 269, GroupLayout.PREFERRED_SIZE)
-								.addContainerGap()))
+						.addGroup(gl_panel_1.createSequentialGroup()
+							.addComponent(lblCaractersticasAMedir, GroupLayout.PREFERRED_SIZE, 165, GroupLayout.PREFERRED_SIZE)
+							.addGap(114))
+						.addGroup(gl_panel_1.createSequentialGroup()
+							.addComponent(txtpnDescripcion, GroupLayout.PREFERRED_SIZE, 269, GroupLayout.PREFERRED_SIZE)
+							.addContainerGap())
+						.addGroup(gl_panel_1.createSequentialGroup()
+							.addComponent(txtpnAceptable, GroupLayout.PREFERRED_SIZE, 269, GroupLayout.PREFERRED_SIZE)
+							.addContainerGap())
+						.addGroup(gl_panel_1.createSequentialGroup()
+							.addComponent(txtpnMedianamenteAceptable, GroupLayout.PREFERRED_SIZE, 269, GroupLayout.PREFERRED_SIZE)
+							.addContainerGap())
+						.addGroup(gl_panel_1.createSequentialGroup()
+							.addComponent(txtpnNoAceptable, GroupLayout.PREFERRED_SIZE, 269, GroupLayout.PREFERRED_SIZE)
+							.addContainerGap())
 						.addComponent(lblEvaluacin, GroupLayout.PREFERRED_SIZE, 165, GroupLayout.PREFERRED_SIZE)
 						.addComponent(lblNewLabel_2)
 						.addComponent(lblMedianamenteAceptable)
-						.addComponent(lblInaceptable, GroupLayout.PREFERRED_SIZE, 67, GroupLayout.PREFERRED_SIZE)
 						.addComponent(lblDescripcin, GroupLayout.PREFERRED_SIZE, 90, GroupLayout.PREFERRED_SIZE)
-						.addComponent(lblNivelActual, GroupLayout.PREFERRED_SIZE, 165, GroupLayout.PREFERRED_SIZE)))
+						.addComponent(lblNivelActual, GroupLayout.PREFERRED_SIZE, 165, GroupLayout.PREFERRED_SIZE)
+						.addGroup(gl_panel_1.createSequentialGroup()
+							.addComponent(lblInaceptable, GroupLayout.PREFERRED_SIZE, 85, GroupLayout.PREFERRED_SIZE)
+							.addContainerGap())))
 		);
 		gl_panel_1.setVerticalGroup(
 			gl_panel_1.createParallelGroup(Alignment.LEADING)
@@ -344,7 +343,7 @@ public class Aplicacion extends JFrame {
 					.addComponent(lblNivelActual)
 					.addPreferredGap(ComponentPlacement.RELATED)
 					.addComponent(sliderNivelActual, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-					.addContainerGap(58, Short.MAX_VALUE))
+					.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 		);
 		panel_1.setLayout(gl_panel_1);
 		
